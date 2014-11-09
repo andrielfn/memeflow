@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>andrielfn.memeflow</string>
+	<key>category</key>
+	<string>Internet</string>
+	<key>connections</key>
+	<dict>
+		<key>CCD2D22E-9AA3-4D89-BC6D-1C6B6E8C6931</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>808A6C6D-2141-44EB-B420-053066DE6C05</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Andriel Nuernberg (@andrielfn)</string>
+	<key>description</key>
+	<string>Easy access to your preferred memes</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Memeflow</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>808A6C6D-2141-44EB-B420-053066DE6C05</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>36</integer>
+				<key>keyword</key>
+				<string>meme</string>
+				<key>runningsubtext</key>
+				<string>Downloading recent added memes...</string>
+				<key>script</key>
+				<string>ruby memes.rb "{query}"</string>
+				<key>title</key>
+				<string>Memeflow</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>CCD2D22E-9AA3-4D89-BC6D-1C6B6E8C6931</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>808A6C6D-2141-44EB-B420-053066DE6C05</key>
+		<dict>
+			<key>ypos</key>
+			<real>50</real>
+		</dict>
+		<key>CCD2D22E-9AA3-4D89-BC6D-1C6B6E8C6931</key>
+		<dict>
+			<key>ypos</key>
+			<real>50</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/andrielfn/memeflow</string>
+</dict>
+</plist>
