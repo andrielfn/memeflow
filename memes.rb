@@ -33,7 +33,7 @@ if File.exists?("#{ENV['HOME']}/.memes")
   personal_memes = JSON.parse(File.read("#{ENV['HOME']}/.memes"))
 end
 
-memes = personal_memes + default_memes
+memes = (personal_memes || []) + default_memes
 
 items = memes.map do |item|
   if item['title'].match(/#{query}/i)
